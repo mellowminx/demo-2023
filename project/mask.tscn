@@ -1,0 +1,36 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://mask.gdshader" type="Shader" id=1]
+
+[sub_resource type="ShaderMaterial" id=2]
+shader = ExtResource( 1 )
+shader_param/invert_mask = false
+
+[node name="Node2D" type="Node2D"]
+
+[node name="bg" type="ColorRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = 1024.0
+margin_bottom = 600.0
+color = Color( 0.352941, 0.509804, 0.443137, 1 )
+
+[node name="BackBufferCopy" type="BackBufferCopy" parent="."]
+copy_mode = 2
+
+[node name="fog_of_war" type="ColorRect" parent="BackBufferCopy"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = 824.0
+margin_bottom = 400.0
+color = Color( 0.247059, 0.25098, 0.286275, 1 )
+
+[node name="mask_container" type="Node2D" parent="BackBufferCopy"]
+material = SubResource( 2 )
+
+[node name="mask" type="ColorRect" parent="BackBufferCopy/mask_container"]
+use_parent_material = true
+margin_left = 153.0
+margin_top = 234.0
+margin_right = 263.0
+margin_bottom = 344.0
