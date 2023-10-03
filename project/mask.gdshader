@@ -1,3 +1,8 @@
+// BackBufferCopy copy method must be set to "Viewport"
+// learned from:
+// https://www.youtube.com/watch?v=Fb0MM4u5lWs
+// https://github.com/mightymochi/Godot-3-Masking-Methods
+
 shader_type canvas_item;
 
 uniform bool invert_mask = false;
