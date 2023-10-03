@@ -30,7 +30,7 @@ material = SubResource( 2 )
 
 [node name="mask" type="ColorRect" parent="BackBufferCopy/mask_container"]
 use_parent_material = true
-margin_left = 153.0
-margin_top = 234.0
-margin_right = 263.0
-margin_bottom = 344.0
+margin_left = 183.0
+margin_top = 129.0
+margin_right = 254.0
+margin_bottom = 210.0
