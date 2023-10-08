@@ -12,6 +12,7 @@ extends Sprite
 ### so that you can reposition the parent node and have the Sprite and CollisionPolygon just follow
 ###
 ### tested in Godot 3.5.3
+### turn on Debug -> Visible Collision Shapes in the Godot menu to check if it works
 
 func _ready():
 	_create_collision_polygon()
