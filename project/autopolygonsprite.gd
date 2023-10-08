@@ -10,6 +10,8 @@ extends Sprite
 ### this seems to work fine even if the Sprite node is not a child of a StaticBody2D or KinematicBody2D node
 ### however, it's better to make the Sprite a child node of a StaticBody2D or KinematicBody2D node
 ### so that you can reposition the parent node and have the Sprite and CollisionPolygon just follow
+###
+### tested in Godot 3.5.3
 
 func _ready():
 	_create_collision_polygon()
