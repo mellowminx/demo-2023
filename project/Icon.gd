@@ -1,5 +1,8 @@
 extends Sprite
 
+### attach this script to a Sprite node with a transparent image texture
+### Sprite must be child node of StaticBody2D or KinematicBody2D
+###
 ### source:
 ### https://ask.godotengine.org/49947/automatically-create-collisionpolygon2d-gdnative-gdscript
 ### https://ask.godotengine.org/98607/opaque_to_polygons-gives-empty-array-as-input
