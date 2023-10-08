@@ -3,10 +3,13 @@ extends Sprite
 ### source:
 ### https://ask.godotengine.org/49947/automatically-create-collisionpolygon2d-gdnative-gdscript
 ### https://ask.godotengine.org/98607/opaque_to_polygons-gives-empty-array-as-input
+###
+### this seems to work fine even if the Sprite node is not a child of a StaticBody2D node
+### however if the 
 
 func _ready():
 	_create_collision_polygon()
-	get_parent().position = Vector2(100,100)
+	get_parent().position = Vector2(200,200)
 
 func _create_collision_polygon():
 		var bm = BitMap.new()
